@@ -9,12 +9,14 @@ public class Cafeteria {
 	private String instagram;
 	private String twitter;
 	ArrayList<Caffe> caffes;
+	ArrayList<Caffe> caffeteria;
 	public Cafeteria(String nombre, String direcion, String faceebook, String instagram, String twitter) {
 		this.nombre = nombre;
 		this.direcion = direcion;
 		this.faceebook = faceebook;
 		this.instagram = instagram;
 		this.twitter = twitter;
+		//this.caffeteria.add(nombre,direcion,faceebook,instagram,twitter);
 
 	}
 

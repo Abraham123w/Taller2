@@ -11,11 +11,11 @@ import java.util.List;
 
 public class CafeteriaController {
 
-    public static Cafeteria cargaMasivaDatos(Automotora automotora){
+    public static Cafeteria cargaMasivaDatos(Cafeteria cafeteria){
 
-        DataAutomotora.leerArchivoClientes(automotora, "C:\\Users\\abrah\\OneDrive\\Escritorio\\Auni2023\\TAREAS LAB PROGRAMACION\\casoautomotora3.0\\clientes.txt");
-        DataAutomotora.leerArchivoVehiculos(automotora, "C:\\Users\\abrah\\OneDrive\\Escritorio\\Auni2023\\TAREAS LAB PROGRAMACION\\casoautomotora3.0\\vehiculos.txt");
-        return automotora;
+        DataCaffeteria.leerArchivoCaffes(cafeteria, "C:\\Users\\abrah\\OneDrive\\Escritorio\\Auni2023\\TAREAS LAB PROGRAMACION\\taller2\\caffes.txt");
+
+        return cafeteria;
     }
     public static List buscarVehiculoPorNombre(Automotora automotora, String nombre){
         return automotora.buscarAutoNombre(nombre);
@@ -28,13 +28,13 @@ public class CafeteriaController {
     }
     //modelo,ano,precio,kilometrosRecorridos,color,marca
 
-    public static void almacenarDatos(Automotora automotora) {
+    public static void almacenarDatos(Cafeteria cafeteria) {
         // Se registran los datos de los clientes en un archivo llamado "clientes.txt"
-        DataAutomotora.registrarDatos(automotora.getClientes(), "clientes.txt");
+        DataCaffeteria.registrarDatos(cafeteria.getCaffes(), "clientes.txt");
 
 
 
         // Se registran los datos de los vehículos a la venta en un archivo llamado "vehiculos.txt"
-        DataAutomotora.registrarDatos(automotora.getVehiculos(), "vehiculos.txt");
+        DataCaffeteria.registrarDatos(cafeteria.get, "vehiculos.txt");
     }
 }

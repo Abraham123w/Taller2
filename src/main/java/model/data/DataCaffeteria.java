@@ -40,7 +40,7 @@ public class DataCaffeteria {
  String rut, String direccion, String numeroTel, String correo y retorne la automotora con los vehiculos anadidos
  */
 
-    public static Cafeteria leerArchivoCafeteria(Cafeteria cafeteria, String direccionArchivo) {
+    /*public static Cafeteria leerArchivoCafeteria(Cafeteria cafeteria, String direccionArchivo) {
         String textoArchivo = "";
         try {
             File archivo = new File(direccionArchivo);
@@ -53,7 +53,7 @@ public class DataCaffeteria {
                 //se llama a una lista de vehiculos alojada en automotora y se  anaden los vehiculos
                 // a esa lista de vehiculos
 
-                cafeteria(new Caffe(data[0], Integer.parseInt(data[1]), Double.parseDouble(data[2]), Integer.parseInt(data[3]), data[4],data[5]));
+                cafeteria cafeteria1 = new cafeteria(data[0], Integer.parseInt(data[1]), Double.parseDouble(data[2]), Integer.parseInt(data[3]), data[4], data[5]);
                 // Suponiendo que tienes una lista de vehículos llamada "vehiculos"
 
                 //String modelo, int ano, double precio, int kilometrosRecorridos, String color, String marca
@@ -65,8 +65,8 @@ public class DataCaffeteria {
             System.out.println(e);
             System.out.println("Documento no disponible, favor contactar con administrador");
         }
-        return automotora;
-    }
+        return cafeteria;
+    }*/
     /*public static Automotora leerArchivoVehiculo(Automotora automotora, String direccionArchivo) {
         try {
             File archivo = new File(direccionArchivo);
