@@ -17,7 +17,7 @@ public class CafeteriaController {
 
         return cafeteria;
     }
-    public static List buscarVehiculoPorNombre(Automotora automotora, String nombre){
+   /* public static List buscarVehiculoPorNombre(Automotora automotora, String nombre){
         return automotora.buscarAutoNombre(nombre);
     }
     public static List buscarVehiculoPorMarca(Automotora automotora, String marca){
@@ -25,10 +25,10 @@ public class CafeteriaController {
     }
     public static Vehiculo agregarVehiculo(Automotora automotora,String modelo, int ano, double precio, int kilometrosRecorridos, String color, String marca){
         return automotora.añadirVehiculo(modelo,ano,precio,kilometrosRecorridos,color,marca);
-    }
+    }*/
     //modelo,ano,precio,kilometrosRecorridos,color,marca
 
-    public static void almacenarDatos(Cafeteria cafeteria) {
+   /* public static void almacenarDatos(Cafeteria cafeteria) {
         // Se registran los datos de los clientes en un archivo llamado "clientes.txt"
         DataCaffeteria.registrarDatos(cafeteria.getCaffes(), "clientes.txt");
 
@@ -36,5 +36,5 @@ public class CafeteriaController {
 
         // Se registran los datos de los vehículos a la venta en un archivo llamado "vehiculos.txt"
         DataCaffeteria.registrarDatos(cafeteria.get, "vehiculos.txt");
-    }
+    }*/
 }
