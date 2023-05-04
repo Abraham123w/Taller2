@@ -5,13 +5,13 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class VentanaObtenerListaCaffes extends JFrame implements ActionListener {
+public class VentanaObtenerListaDeCaffe extends JFrame implements ActionListener {
 
     private JComboBox<String> cmbTamanos;
     private JButton btnObtener;
     private JButton btnCancelar;
 
-    public VentanaObtenerListaCaffes() {
+    public VentanaObtenerListaDeCaffe() {
         super("Obtener Lista de Cafés");
 
         // Configuración de la ventana
@@ -63,6 +63,6 @@ public class VentanaObtenerListaCaffes extends JFrame implements ActionListener 
     }
 
     public static void main(String[] args) {
-        VentanaObtenerListaCaffes ventana = new VentanaObtenerListaCaffes();
+        VentanaObtenerListaDeCaffe ventana = new VentanaObtenerListaDeCaffe();
     }
 }
